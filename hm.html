@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hesap  Makinesi</title>
+	<meta charset="UTF-8">
+<style>
+
+ .wrapper{
+margin: auto;
+  display:grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  column-gap: 10px;
+  grid-row-gap: 10px;
+  text-align: center;
+  grid-auto-rows: 60px
+
+
+ }
+ .box{
+  background-color:grey;
+  grid-column-start: 1;
+  grid-column-end: 2;
+ }
+  .box1{
+  background-color: grey;
+  grid-column-start: 2;
+  grid-column-end: 5;
+ }
+.box2{
+    background-color: grey;
+}
+
+.input{
+   background-color: yellow;
+  grid-column-start: 1;
+  grid-column-end: 5;
+
+}
+
+</style>
+<script type="text/javascript">
+  
+
+function sayiyaz(rakam)
+{
+if (rakamekle) {
+document.wrapper.sonuc.value += rakam
+
+else {
+document.hesapmakinesi.sonuc.value = rakam
+rakamekle = true
+}
+}
+</script>
+</head>
+<body>
+  
+  <div class="wrapper">
+   
+      <input class="input"  type="text" name="">
+
+  <button value="%" class="box">%</button>
+  <button  value="temizle" class="box1">Temizle</button>
+  <button value="/" class="box2">/</button>
+  <button value="1" class="box2">1</button>
+  <button value="2" class="box2">2</button>
+  <button value="3" class="box2">3</button>
+  <button value="*" class="box2">*</button>
+  <button value="4" class="box2">4</button>
+  <button value="5" class="box2">5</button>
+                  
+  <button value="6" class="box2">6</button>
+  <button value="-" class="box2">-</button>
+  <button value="7" class="box2">7</button>
+  <button value="8" class="box2">8</button>
+  <button value="9" class="box2">9</button>
+  <button value="+" class="box2">+</button> 
+  <button value="0" class="box2">0</button>
+  <button value="." class="box2">.</button>
+  <button  class="box2"></button>
+   
+             
+  </div>
+
+
+
+</body>
+</html>
+
